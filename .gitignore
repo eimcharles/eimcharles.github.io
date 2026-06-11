@@ -1,0 +1,16 @@
+# Dependency Directories
+node_modules/
+
+# Production Builds
+dist/
+dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor & System Files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
