@@ -9,11 +9,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center items-center p-4 md:p-6 sm:w-full select-none">
-      <div className="flex flex-row justify-center items-center px-4 py-4 gap-6 md:gap-8 w-full max-w-[80%] md:max-w-2xl 
-                      font-chillax text-sm md:text-base 
-                      rounded-full border border-neutral-800/60 bg-neutral-950/40
+      <div className="flex flex-row justify-evenly items-center px-4 py-4 gap-6 md:gap-8 w-full max-w-[95%] md:max-w-5xl
+                      font-chillax rounded-full border border-neutral-800/60 bg-neutral-950/40
                       backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.4)] 
-                      transition-all duration-500 ease-in-out">
+                      transition-[max-width] duration-500 ease-out">
                         
       {navigationItems.map((item) => {
         const Icon = item.icon;
@@ -24,7 +23,7 @@ const Navbar = () => {
           key={item.linkName} 
           href={item.href} 
           onClick={() => setActiveTab(item.href)}
-          className="relative flex items-center gap-2 px-4 py-2 rounded-full 
+          className="relative flex items-center gap-2 px-3 py-2 rounded-full 
                     text-sm font-medium transition-colors duration-300 outline-none z-10
                     text-neutral-200/70 hover:text-neutral-100">
 
@@ -36,8 +35,8 @@ const Navbar = () => {
               />
             )}
 
-          <span className="block text-xl md:text-lg transition-all duration-500"><Icon/></span>
-          <span className="hidden md:inline text-sm transition-all duration-500 tracking-wide">{item.linkName}</span>
+          <span className="text-lg"><Icon/></span>
+          <span className="hidden md:inline text-sm tracking-wide">{item.linkName}</span>
           </a>
         ); 
       })}
