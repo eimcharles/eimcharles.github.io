@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { heroData } from '../data/heroData';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa6';
 import { FiFileText, FiChevronDown } from "react-icons/fi";
-import { MdDataObject } from "react-icons/md";
 
 const Hero = () => {
   
@@ -25,12 +24,13 @@ const Hero = () => {
         
         {/* Main Header */}
         <div className="flex flex-col items-center gap-6 my-6 w-full"> 
-          <h1 className="font-kola text-5xl md:text-6xl lg:text-7xl text-neutral-400 tracking-widest">
+          <h1 className="font-kola text-5xl md:text-6xl lg:text-7xl text-neutral-400 tracking-widest transition-all duration-500 ease-in-out">
             Hi, I'm Charles
           </h1>
 
           {/* Subheader */}
-          <div className="w-full max-w-2xl text-center flex justify-center items-center overflow-hidden min-h-10">
+          <div className="w-full max-w-2xl text-center flex justify-center items-center overflow-hidden min-h-10 
+                          transition-all duration-500 ease-in-out">
             <AnimatePresence mode="wait">
               <motion.div
                 key={index}
