@@ -3,9 +3,10 @@ import { navigationItems } from '../data/navbarData';
 
 const Navbar = () => {
   return (
-    <nav className="fixed flex justify-center items-center top-0 left-0 right-0 z-50 p-4 w-full select-none">
-      <div className="flex flex-row justify-center items-center px-4 py-3 sm:py-4 gap-4 sm:gap-6 md:gap-8 w-full max-w-xl
-                      font-satoshi backdrop-blur-md rounded-2xl shadow-sm bg-white/20">
+    <nav className="fixed flex justify-evenly items-center top-0 left-0 right-0 z-50 p-4 w-full select-none">
+      <div className="flex flex-row justify-center items-center px-4 py-3 sm:py-4 gap-4 sm:gap-6 md:gap-6 w-full max-w-sm
+                      font-satoshi backdrop-blur-md rounded-2xl shadow-lg bg-white/20
+                      border-stone-400/10 border">
                         
       {navigationItems.map((item) => (
         <a key={item.linkName} href={item.href} 
