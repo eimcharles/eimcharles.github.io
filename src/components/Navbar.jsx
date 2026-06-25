@@ -1,20 +1,36 @@
 import React from 'react';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { navigationItems } from '../data/navbarData';
 
 const Navbar = () => {
+  const [activeTab, setActiveTab] = useState('#home');
+
   return (
-    <nav className="fixed flex justify-evenly items-center top-0 left-0 right-0 z-50 p-4 w-full select-none">
-      <div className="flex flex-row justify-center items-center px-4 py-3 sm:py-4 gap-4 sm:gap-6 md:gap-6 w-full max-w-sm
-                      font-satoshi backdrop-blur-md rounded-2xl shadow-lg bg-white/20
-                      border-stone-400/10 border">
+    <nav className="fixed top-4 left-0 right-0 z-50 px-4 w-full select-none">
+      <div className="flex flex-row justify-center items-center px-2.5 py-2 sm:px-4 sm:py-3 gap-1 sm:gap-3 max-w-fit mx-auto
+                      font-satoshi font-black tracking-tight">
                         
-      {navigationItems.map((item) => (
-        <a key={item.linkName} href={item.href} 
-           className="relative text-sm transition-colors duration-300 text-stone-950 group">
-          <span className="tracking-wide">{item.linkName}</span>
-          <span className="absolute inset-x-0 bottom-0 h-[1.5px] w-0 bg-stone-950 transition-all duration-300 ease-out group-hover:w-full" />
-        </a>
-      ))}
+      {navigationItems.map((item) => {
+        const isActive = activeTab === item.href;
+        return (
+          <a 
+            key={item.linkName} 
+            href={item.href} 
+            onClick={() => setActiveTab(item.href)}
+            className="relative px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm tracking-wide text-stone-900 rounded-full transition-colors duration-200"
+          >
+              {isActive && (
+                <motion.span 
+                  layoutId="activeTab" 
+                  className="absolute inset-0 shadow-xl rounded-xl z-0 black backdrop-blur-lg bg-stone-200/20"
+                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                />
+              )}
+              <span className="relative z-10">{item.linkName}</span>
+          </a>
+        ); 
+      })}
       </div>
     </nav>
   );
