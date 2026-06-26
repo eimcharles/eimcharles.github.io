@@ -1,5 +1,3 @@
-import { VscHome } from "react-icons/vsc";
-
 export const navigationItems = [
   {linkName: 'Home', href: '#home'},
   {linkName: 'Experience', href: '#experience'},
