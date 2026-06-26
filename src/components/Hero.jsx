@@ -21,11 +21,13 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative flex flex-col justify-center items-center px-6 sm:px-12 md:px-24 min-h-screen 
-                        bg-linear-to-b from-[#727875] via-[#d2dcd9] to-[#ffff] select-none overflow-hidden">
+                        bg-linear-to-b from-[#677b71] via-[#ffffff] to-[#ffffff] select-none overflow-hidden">
       <div className="flex flex-col items-center w-full max-w-5xl mx-auto z-10 text-center">
-        <h1 className="flex flex-wrap sm:flex-nowrap justify-center items-baseline gap-x-3 gap-y-1 text-4xl sm:text-6xl md:text-6xl lg:text-8xl font-chillax text-stone-900">
-          I'm Charles_
-          <LuBinary className="text-3xl sm:text-5xl md:text-7xl hover:text-stone-600 text-stone-900 transition-all duration-500 hover:rotate-360" />
+        <h1 className="flex flex-wrap sm:flex-nowrap justify-center 
+                       items-baseline gap-x-3 gap-y-1 text-4xl 
+                       sm:text-6xl md:text-6xl lg:text-8xl 
+                       font-chillax text-stone-900">I'm Charles_
+          <LuBinary className="text-3xl sm:text-5xl md:text-7xl hover:text-stone-600 text-stone-900 transition-all duration-500 hover:rotate-360"/>
         </h1>
 
         <div className="w-full flex justify-center items-center md:py-7 py-4">
@@ -41,7 +43,7 @@ const Hero = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: i * CHARACTER_DELAY, duration: 0.25, ease: "easeInOut" }}
-                  className="inline-block text-stone-600 font-satoshi font-black sm:text-xl md:text-xl text-md whitespace-pre">
+                  className="inline-block text-stone-600 font-satoshi font-black sm:text-xl md:text-2xl text-md whitespace-pre">
                   {letter}
                 </motion.span>
               ))}
@@ -65,7 +67,10 @@ const Hero = () => {
       </div>   
       
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
-        <FiChevronDown className="text-2xl sm:text-3xl text-stone-400 hover:text-stone-950 transition-colors duration-300" />
+        <a href="#experience" aria-label="Scroll to Experience" className="flex flex-col items-center gap-1">
+          <span className="font-satoshi text-xs text-stone-950 select-none">Click to Explore</span>
+          <FiChevronDown className="text-2xl sm:text-3xl text-stone-950 transition-colors duration-300 cursor-pointer"/>
+        </a>
       </div>
     </section>    
   );
