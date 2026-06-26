@@ -8,8 +8,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-4 w-full select-none">
-      <div className="flex flex-row justify-center items-center px-2.5 py-2 sm:px-4 sm:py-3 gap-1 sm:gap-3 max-w-fit mx-auto
-                      font-satoshi font-black tracking-tight">
+      <div className="flex flex-row justify-center items-center px-2.5 py-2 
+                      sm:px-4 sm:py-3 gap-1 sm:gap-3 max-w-fit mx-auto
+                      font-satoshi backdrop-blur-sm rounded-xl">
                         
       {navigationItems.map((item) => {
         const isActive = activeTab === item.href;
@@ -23,7 +24,7 @@ const Navbar = () => {
               {isActive && (
                 <motion.span 
                   layoutId="activeTab" 
-                  className="absolute inset-0 shadow-xl rounded-xl z-0 black backdrop-blur-lg bg-stone-200/20"
+                  className="absolute inset-0 rounded-xl z-0 black backdrop-blur-xl bg-[#99a39d]/20"
                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
               )}
