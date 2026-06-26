@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react'; 
 import { motion, AnimatePresence } from 'framer-motion';
-import { heroData } from '../data/heroData';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa6';
-import { FiFileText, FiChevronDown } from "react-icons/fi";
-import {  FiServer, FiLayers, FiRefreshCw } from "react-icons/fi";
-import { LuBinary } from 'react-icons/lu';
+import { heroData, heroIcons} from '../data/heroData';
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -27,7 +23,7 @@ const Hero = () => {
                        items-baseline gap-x-3 gap-y-1 text-4xl 
                        sm:text-6xl md:text-6xl lg:text-8xl 
                        font-chillax text-stone-900">I'm Charles_
-          <LuBinary className="text-3xl sm:text-5xl md:text-7xl hover:text-stone-600 text-stone-900 transition-all duration-500 hover:rotate-360"/>
+          <heroIcons.binary className="text-3xl sm:text-5xl md:text-7xl hover:text-stone-600 text-stone-900 transition-all duration-500 hover:rotate-360"/>
         </h1>
 
         <div className="w-full flex justify-center items-center md:py-7 py-4">
@@ -53,15 +49,15 @@ const Hero = () => {
 
         <div className="flex flex-row justify-center items-center gap-8">
           <a href="#resume" title="View Resume">
-            <FiFileText className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+            <heroIcons.resume className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
           </a>
                               
           <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile">
-            <FaGithub className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+            <heroIcons.github className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
           </a>
           
           <a href="https://www.linkedin.com/in/charles-eimer" target="_blank" rel="noreferrer" title="LinkedIn Profile">
-            <FaLinkedinIn className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+            <heroIcons.linkedIn className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
           </a>
         </div>  
       </div>   
@@ -69,7 +65,7 @@ const Hero = () => {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
         <a href="#experience" aria-label="Scroll to Experience" className="flex flex-col items-center gap-1">
           <span className="font-satoshi text-xs text-stone-950 select-none">Click to Explore</span>
-          <FiChevronDown className="text-2xl sm:text-3xl text-stone-950 transition-colors duration-300 cursor-pointer"/>
+          <heroIcons.arrow className="text-2xl sm:text-3xl text-stone-950 transition-colors duration-300 cursor-pointer"/>
         </a>
       </div>
     </section>    
