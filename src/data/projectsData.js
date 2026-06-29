@@ -90,6 +90,6 @@ export const projectsData = [
     image: Smartess,
     demo:"Live Demo",
     demoUrl: "https://smartess.vercel.app/",
-    githubUrl: 'https://smartess.vercel.app'
+    githubUrl: 'https://github.com/eimcharles/Smartess'
   },
 ];
