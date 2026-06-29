@@ -49,7 +49,7 @@ const Projects = () => {
                           <p className="text-xs lg:text-sm font-satoshi text-stone-900 group-hover:text-stone-500 transition-colors duration-500">
                             {project.demo}
                           </p>
-                          <projectsIcons.demoUrl className="text-lg text-stone-900 group-hover:text-[#1e63ca] transition-colors duration-500" />
+                          <projectsIcons.demoUrl className="text-xs lg:text-lg text-stone-900 group-hover:text-[#1e63ca] transition-colors duration-500" />
                         </a>
                       )}
                       
@@ -60,7 +60,7 @@ const Projects = () => {
                         <p className="text-xs lg:text-sm font-satoshi text-stone-900 group-hover:text-stone-500 transition-colors duration-500">
                           Github
                         </p>
-                        <projectsIcons.github className="text-lg text-stone-900 group-hover:text-[#F05032] transition-colors duration-500"/>
+                        <projectsIcons.github className="text-xs lg:text-lg text-stone-900 group-hover:text-[#F05032] transition-colors duration-500"/>
                       </a>
                     </div>
                   </div> 
