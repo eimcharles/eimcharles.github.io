@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-4 w-full select-none">
       <div className="flex flex-row justify-center items-center px-2.5 py-2 
-                      sm:px-4 sm:py-3 gap-1 sm:gap-3 max-w-fit mx-auto
-                      font-satoshi backdrop-blur-sm bg-[#ffffff]/30 rounded-xl">
+                      sm:px-1.5 sm:py-2 gap-1 sm:gap-3 max-w-fit mx-auto
+                      font-satoshi backdrop-blur-sm bg-[#ffffff]/30 rounded-2xl">
                         
       {navigationItems.map((item) => {
         const isActive = activeTab === item.href;
