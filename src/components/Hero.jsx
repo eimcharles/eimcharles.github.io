@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'; 
 import { motion, AnimatePresence } from 'framer-motion';
 import { heroData, heroIcons} from '../data/heroData';
+import { FiMessageSquare } from 'react-icons/fi';
+
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -17,29 +19,29 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative flex flex-col justify-center items-center px-6 sm:px-12 md:px-24 min-h-screen 
-                        bg-linear-to-b from-[#677b71] via-[#ffffff] to-[#ffffff] select-none overflow-hidden">
-      <div className="flex flex-col items-center w-full max-w-5xl mx-auto z-10 text-center">
+                        bg-linear-to-b from-[#667a70] via-[#ffffff] to-[#ffffff] select-none overflow-hidden">
+      <div className="flex flex-col items-center w-full mx-auto">
         <h1 className="flex flex-wrap sm:flex-nowrap justify-center 
-                       items-baseline gap-x-3 gap-y-1 text-4xl 
-                       sm:text-6xl md:text-6xl lg:text-8xl 
-                       font-chillax text-stone-900">I'm Charles_
-          <heroIcons.binary className="text-3xl sm:text-5xl md:text-7xl hover:text-stone-600 text-stone-900 transition-all duration-500 hover:rotate-360"/>
+                       items-baseline gap-x-3 text-3xl 
+                       sm:text-5xl md:text-5xl 
+                       font-chillax text-stone-900">Hey, I'm Charles
+          <heroIcons.binary className="text-3xl md:text-2xl hover:text-stone-600 text-stone-900 transition-all duration-500 hover:rotate-360"/>
         </h1>
 
-        <div className="w-full flex justify-center items-center md:py-7 py-4">
+        <div className="w-full flex justify-center items-center md:py-4 py-4">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
               exit={{ opacity: 0 }}
               transition={{ duration: SENTENCE_FADE_OUT_DELAY, ease: "easeInOut" }}
-              className="flex flex-wrap justify-center items-cente tracking-tight">
+              className="flex flex-wrap justify-center items-center tracking-tight">
               {heroData[index].split("").map((letter, i) => (
                 <motion.span
                   key={`${index}-${i}`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: i * CHARACTER_DELAY, duration: 0.25, ease: "easeInOut" }}
-                  className="inline-block text-stone-600 font-satoshi font-black sm:text-xl md:text-2xl text-md whitespace-pre">
+                  className="inline-block text-stone-600 font-satoshi font-black sm:text-xl md:text-base text-md whitespace-pre">
                   {letter}
                 </motion.span>
               ))}
@@ -49,15 +51,15 @@ const Hero = () => {
 
         <div className="flex flex-row justify-center items-center gap-8">
           <a href="#resume" title="View Resume">
-            <heroIcons.resume className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+            <heroIcons.resume className="text-xl sm:text-3xl md:text-xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
           </a>
                               
           <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile">
-            <heroIcons.github className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+            <heroIcons.github className="text-xl sm:text-3xl md:text-xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
           </a>
           
           <a href="https://www.linkedin.com/in/charles-eimer" target="_blank" rel="noreferrer" title="LinkedIn Profile">
-            <heroIcons.linkedIn className="text-xl sm:text-3xl md:text-xl lg:text-2xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+            <heroIcons.linkedIn className="text-xl sm:text-3xl md:text-xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
           </a>
         </div>  
       </div>   
