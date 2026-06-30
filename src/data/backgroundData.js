@@ -3,7 +3,7 @@ import { PiArrowBendDownRightThin } from "react-icons/pi";
 import { LuCalendarClock, LuSprout } from "react-icons/lu";
 import { SiBmcsoftware } from "react-icons/si";
 
-export const experienceIcons = {
+export const backgroundIcons = {
   role: SiBmcsoftware,
   calendar: LuCalendarClock,
   company: FiBriefcase,
@@ -11,7 +11,7 @@ export const experienceIcons = {
   arrow: PiArrowBendDownRightThin,
 };
 
-export const experienceData = [
+export const backgroundData = [
   {
     id: "exp-1",
     role: "B.Eng Software Engineering",
