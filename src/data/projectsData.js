@@ -32,7 +32,7 @@ export const projectsData = [
     id: 'Sidekick',
     type: 'Personal Project',
     title: 'Sidekick',
-    gridSpan: 'md:col-span-8',
+    gridSpan: 'md:col-span-4',
     description: 'A employee management platform with role-based access control and integrated cross-site request forgery (CSRF) protection.',
     languages: [
         { id: 1, name: "Java 17", icon: FaJava, color: "group-hover:text-[#5382A1]"},          
@@ -46,6 +46,23 @@ export const projectsData = [
     demo: "In Progress",
     demoUrl: "https://github.com/eimcharles/sidekick-project",
     githubUrl: 'https://github.com/eimcharles/sidekick-project' 
+  },
+    {
+    id: 'Smartess',
+    type: 'Capstone Project',
+    title: 'Smartess',
+    gridSpan: 'md:col-span-4',
+    description: 'A centralized smart home system that aggregates invaluable user unit information into a unified web platform.',
+    languages: [
+        { id: 11, name: "React", icon: SiReact, color: "group-hover:text-[#61DAFB]"}, 
+        { id: 12, name: "Nextjs", icon: SiNextdotjs, color: "group-hover:text-[#000000]"},         
+        { id: 13, name: "Docker", icon: SiDocker, color: "group-hover:text-[#00758F]"},    
+        { id: 14, name: "Go", icon: SiGo, color: "group-hover:text-[#00ADD8]"},     
+    ],
+    image: Smartess,
+    demo:"Live Demo",
+    demoUrl: "https://smartess.vercel.app/",
+    githubUrl: 'https://github.com/eimcharles/Smartess'
   },
   {
     id: 'Cybertruck',
@@ -74,22 +91,5 @@ export const projectsData = [
     image: Particles,
     demo: "Demo",
     githubUrl: 'https://github.com/eimcharles/interactive-3d-graphics-scene' 
-  },
-  {
-    id: 'Smartess',
-    type: 'Capstone Project',
-    title: 'Smartess',
-    gridSpan: 'md:col-span-4',
-    description: 'A centralized smart home system that aggregates invaluable user unit information into a unified web platform.',
-    languages: [
-        { id: 11, name: "React", icon: SiReact, color: "group-hover:text-[#61DAFB]"}, 
-        { id: 12, name: "Nextjs", icon: SiNextdotjs, color: "group-hover:text-[#000000]"},         
-        { id: 13, name: "Docker", icon: SiDocker, color: "group-hover:text-[#00758F]"},    
-        { id: 14, name: "Go", icon: SiGo, color: "group-hover:text-[#00ADD8]"},     
-    ],
-    image: Smartess,
-    demo:"Live Demo",
-    demoUrl: "https://smartess.vercel.app/",
-    githubUrl: 'https://github.com/eimcharles/Smartess'
   },
 ];

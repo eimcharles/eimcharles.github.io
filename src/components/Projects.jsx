@@ -6,14 +6,14 @@ const Projects = () => {
     <section id="projects" className="w-full px-6 py-16 md:py-24 select-none overflow-hidden bg-[#ffffff]">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-8 md:gap-12">
         <h2 className="text-3xl md:text-5xl font-black font-satoshi tracking-tighter text-stone-900 leading-none text-center">
-          Projects
+          Featured Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-8 gap-6 w-full">
           {projectsData.map((project) => (
             <div key={project.id} className={`group ${project.gridSpan} w-full flex flex-col`}>
               
-              <div className="flex flex-col gap-4 overflow-hidden rounded-xl border border-stone-200 
+              <div className="flex flex-col gap-4 overflow-hidden rounded-2xl border border-stone-200 
                               hover:scale-[0.99] transition-all duration-500 bg-[#ffffff]">  
                 <div className="flex flex-col gap-4 pt-4 px-6 sm:pt-8 sm:px-8">
                   
@@ -81,7 +81,6 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        
       </div>
     </section>
   );
