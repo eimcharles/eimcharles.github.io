@@ -44,7 +44,7 @@ const Projects = () => {
                     <div className="flex justify-end items-center gap-4 font-chillax text-xs lg:text-sm">
                       {project.demoUrl && (
                         <a href={project.demoUrl} target="_blank" rel="noreferrer" 
-                          className="flex items-center gap-2 text-stone-900 transition-all duration-300 hover:translate-x-1"
+                        className="flex items-center gap-2 text-stone-900 transition-all duration-300 hover:translate-x-1"
                           title={`Live Link for ${project.title}`}>
                           <p className="text-xs lg:text-sm font-satoshi text-stone-900 group-hover:text-stone-500 transition-colors duration-500">
                             {project.demo}
@@ -53,10 +53,8 @@ const Projects = () => {
                         </a>
                       )}
                       
-                      <a 
-                        href={project.githubUrl} target="_blank" rel="noreferrer" 
-                        className="flex items-center gap-2 text-stone-900 transition-all duration-300 hover:translate-x-1" 
-                        title={`${project.title} Repository`}>
+                      <a href={project.githubUrl} target="_blank" rel="noreferrer" title={`${project.title} Repository`}
+                      className="flex items-center gap-2 text-stone-900 transition-all duration-300 hover:translate-x-1">
                         <p className="text-xs lg:text-sm font-satoshi text-stone-900 group-hover:text-stone-500 transition-colors duration-500">
                           Github
                         </p>
@@ -81,6 +79,19 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+        <div className="w-full max-w-xl mx-auto flex flex-col items-center">
+          <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub" 
+          className="group flex items-center gap-2 px-5 py-2.5 rounded-xl border border-stone-300 bg-[#ffffff] hover:bg-stone-50 
+                   text-stone-900 font-satoshi text-xs lg:text-sm shadow-xs transition-all duration-300 hover:scale-[0.97]">
+            <p className="text-xs lg:text-sm group-hover:text-stone-500 transition-colors duration-500">
+              Explore more projects
+            </p>
+            <projectsIcons.github className="text-xs lg:text-lg text-stone-900 transition-all duration-300 
+                                           group-hover:text-[#F05032] group-hover:translate-x-1" />
+          </a>
+        </div>
+
       </div>
     </section>
   );
