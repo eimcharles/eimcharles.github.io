@@ -20,7 +20,7 @@ const Background = () => {
                 <div className="hidden md:block absolute left-1/2 top-10 w-1 h-2/3 rounded-4xl bg-stone-400/20 group-hover:bg-stone-900
                                 group-hover:border-none -translate-x-1/2 transition-all duration-300 group-hover:scale-50 z-10" />
 
-                <div className="w-full md:w-[48%] rounded-3xl p-6 sm:p-8 flex flex-col transition-all duration-500
+                <div className="w-full md:w-[48%] rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-500
                  hover:bg-[#ffffff] hover:shadow-none bg-stone-200/20 shadow-xl">
                   
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-1">
