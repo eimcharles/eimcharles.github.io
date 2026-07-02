@@ -1,3 +1,6 @@
+import { FaLinkedinIn} from 'react-icons/fa6';
+import { BsFileText } from "react-icons/bs";
+import { FiGithub } from "react-icons/fi";
 import Profile from '../assets/Profile.webp';
 
 export const aboutIcons = {
