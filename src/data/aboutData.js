@@ -1,8 +1,7 @@
-export const aboutData = {
-  sectionHeader: "About me",  
-  introduction: "Hey! I'm Charles, a passionate software developer who enjoys building systems to solve complex, real-world problems.",
-  body: "My most recent professional experience was at Intact Insurance during my bachelor's degree, where I focused on modernizing microservices and cloud deployments. This role gave me hands-on experience developing resilient, scalable systems through collaborative, Agile-driven development.",
-  conclusion: "Other than coding, I spend most of my free time in nature, cycling, and playing hockey. I've also been exploring coffee shops around the city — so feel free to reach out with any recommendations!",
-  languages: "English, French, and Polish",
-  location: "Montreal, Canada"
+import Profile from '../assets/Profile.webp';
+
+export const aboutData = { 
+  profileImage: Profile,
+  body: "I am a bilingual Software Engineering graduate from Concordia University with a passion for creating engaging software experiences. To achieve this, I focus on expanding my engineering toolkit into emerging ecosystems to build robust, scalable systems.",
+  conclusion: "Other than developing software, I spend my free time in nature, cycling, and playing hockey. I've also been exploring coffee shops around the city — so feel free to reach out with any recommendations!",
 };
