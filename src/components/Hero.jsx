@@ -65,8 +65,8 @@ const Hero = () => {
       </div>   
       
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
-        <a href="#background" aria-label="Scroll to background" className="flex flex-col items-center gap-1">
-          <span className="font-satoshi text-xs text-stone-950 select-none">Click to Explore</span>
+        <a href="#about" aria-label="Scroll to About" className="flex flex-col items-center gap-1">
+          <span className="font-chillax text-sm text-stone-950 select-none">Explore</span>
           <heroIcons.arrow className="text-2xl sm:text-3xl text-stone-950 transition-colors duration-300 cursor-pointer"/>
         </a>
       </div>

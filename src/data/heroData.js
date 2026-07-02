@@ -2,10 +2,11 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa6';
 import { FiChevronDown } from "react-icons/fi";
 import { LuBinary} from 'react-icons/lu';
 import { BsFileText } from "react-icons/bs";
+import { FiGithub } from "react-icons/fi";
 
 export const heroIcons = {
   linkedIn: FaLinkedinIn,
-  github: FaGithub,
+  github: FiGithub,
   resume: BsFileText,
   arrow: FiChevronDown,
   binary: LuBinary,
