@@ -1,5 +1,11 @@
 import Profile from '../assets/Profile.webp';
 
+export const aboutIcons = {
+  linkedIn: FaLinkedinIn,
+  github: FiGithub,
+  resume: BsFileText,
+};
+
 export const aboutData = { 
   profileImage: Profile,
   body: "I am a bilingual Software Engineering graduate from Concordia University with a passion for creating engaging software experiences. To achieve this, I focus on expanding my engineering toolkit into emerging ecosystems to build robust, scalable systems.",

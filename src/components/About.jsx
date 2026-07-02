@@ -1,7 +1,5 @@
 import React from 'react';
-import { aboutData } from '../data/aboutData';
-import { heroIcons} from '../data/heroData';
-import { FiArrowUpRight, FiMessageSquare } from 'react-icons/fi';
+import { aboutData, aboutIcons } from '../data/aboutData';
 
 const About = () => {
   return (
@@ -26,18 +24,22 @@ const About = () => {
           <p>{aboutData.conclusion}</p>
         </div>
 
-
-        <div className="flex flex-row justify-center items-center gap-8">
-          <a href="#resume" title="View Resume">
-            <heroIcons.resume className="text-xl sm:text-3xl md:text-xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+        <div className="flex flex-row justify-center items-center gap-2 font-satoshi text-xs lg:text-sm text-stone-900">
+          <a href="#resume" title="View Resume" 
+          className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] hover:bg-stone-50 
+                     transition-all duration-300 hover:scale-[0.97]">
+            <aboutIcons.resume className="text-xl sm:text-3xl md:text-xl text-[#209b3e] group-hover:text-stone-500 transition-colors duration-300"/>
+          </a>            
+          <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile"
+          className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] hover:bg-stone-50 
+                     transition-all duration-300 hover:scale-[0.97]">
+            <aboutIcons.github className="text-xl sm:text-3xl md:text-xl text-[#F05032] group-hover:text-stone-500 transition-colors duration-300"/>
           </a>
-                              
-          <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile">
-            <heroIcons.github className="text-xl sm:text-3xl md:text-xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
-          </a>
-          
-          <a href="https://www.linkedin.com/in/charles-eimer" target="_blank" rel="noreferrer" title="LinkedIn Profile">
-            <heroIcons.linkedIn className="text-xl sm:text-3xl md:text-xl text-stone-950 hover:text-stone-500 transition-all duration-300 hover:translate-x-1" />
+          <a href="https://www.linkedin.com/in/charles-eimer" target="_blank" rel="noreferrer" title="LinkedIn Profile"
+           className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
+                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
+            <aboutIcons.linkedIn className="text-xl sm:text-3xl md:text-xl text-[#0077B5] group-hover:text-stone-500 transition-colors duration-300
+            hover:scale-[0.97]"/>
           </a>
         </div> 
 

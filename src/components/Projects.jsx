@@ -1,5 +1,6 @@
 import React from 'react';
 import { projectsData, projectsIcons } from '../data/projectsData';
+import { heroIcons } from '../data/heroData';
 
 const Projects = () => {
   return (
@@ -27,13 +28,13 @@ const Projects = () => {
                         <a href={project.demoUrl} target="_blank" rel="noreferrer" 
                         className="flex items-center gap-1 text-stone-900 transition-all duration-300 hover:translate-x-1"
                           title={`Live Link for ${project.title}`}>
-                          <projectsIcons.demoUrl className="text-xs lg:text-lg text-[#1e63ca]" />
+                          <projectsIcons.demoUrl className="text-xs lg:text-lg text-[#1e63ca] " />
                           <p className="text-xs lg:text-sm font-satoshi text-stone-500">{project.demo}</p>
                         </a>
                       )}
                       <a href={project.githubUrl} target="_blank" rel="noreferrer" title={`${project.title} Repository`}
-                      className="flex items-center gap-2 text-stone-900 transition-all duration-300 hover:translate-x-1">
-                        <p className="text-xs lg:text-sm font-satoshi text-stone-500">Github</p>
+                      className="flex items-center gap-2 text-stone-900 transition-all duration-300 hover:translate-x-1 ">
+                        <p className="text-xs lg:text-sm font-satoshi text-stone-500">Project</p>
                         <projectsIcons.github className="text-xs lg:text-lg text-[#F05032] transition-colors duration-500"/>
                       </a>
                     </div> 
@@ -71,17 +72,29 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="w-full max-w-xl mx-auto flex flex-col items-center">
-          <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub" 
-          className="group flex items-center gap-2 px-5 py-2.5 rounded-xl border border-stone-300 bg-[#ffffff] hover:bg-stone-50 
-                   text-stone-900 font-satoshi text-xs lg:text-sm shadow-xs transition-all duration-300 hover:scale-[0.97]">
-            <p className="text-xs lg:text-sm group-hover:text-stone-500 transition-colors duration-500">
-              Explore more projects
-            </p>
-            <projectsIcons.github className="text-xs lg:text-lg transition-all duration-300 text-[#F05032] group-hover:translate-x-1" />
+        <div className="flex flex-row justify-center items-center gap-2 font-satoshi text-xs lg:text-sm text-stone-900">
+          <a href="#resume" title="View Resume" 
+          className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff]
+                   hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
+            <projectsIcons.resume className="text-xl sm:text-3xl md:text-xl text-[#209b3e] group-hover:text-stone-500 transition-colors duration-300"/>
           </a>
-        </div>
 
+          <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile"
+          className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
+                   hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
+            <projectsIcons.github className="text-xl sm:text-3xl md:text-xl text-[#F05032] group-hover:text-stone-500 transition-colors duration-300"/>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/charles-eimer" target="_blank" rel="noreferrer" title="LinkedIn Profile"
+           className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
+                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
+            <projectsIcons.linkedIn className="text-xl sm:text-3xl md:text-xl text-[#0077B5] group-hover:text-stone-500 transition-colors duration-300"/>
+          </a>
+        </div> 
+        
+        <p className="flex justify-center items-center gap-1.5 font-satoshi text-sm">
+          Designed and <projectsIcons.code className="text-[#209b3e]"/> with <projectsIcons.heart className="fill-[#d40f78] text-[#e11515]"/>
+        </p>
       </div>
     </section>
   );
