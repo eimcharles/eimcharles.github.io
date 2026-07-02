@@ -20,12 +20,12 @@ const About = () => {
           </div>
         </div>
                 
-        <div className='flex flex-col w-full'>
-          <div className='flex flex-col justify-center items-start gap-8 font-satoshi text-base text-neutral-500 leading-relaxed font-light max-w-full text-justify italic'>
-            <p>{aboutData.body}</p>
-            <p>{aboutData.conclusion}</p>
-          </div>
+        <div className='flex flex-col justify-center gap-6 font-satoshi text-xs lg:text-sm text-neutral-500 
+                        leading-relaxed max-w-full text-justify italic'>
+          <p>{aboutData.body}</p>
+          <p>{aboutData.conclusion}</p>
         </div>
+
 
         <div className="flex flex-row justify-center items-center gap-8">
           <a href="#resume" title="View Resume">
