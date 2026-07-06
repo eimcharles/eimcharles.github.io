@@ -4,7 +4,7 @@ import { heroIcons } from '../data/heroData';
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full px-6 py-16 md:py-36 select-none overflow-hidden bg-[#ffffff]">
+    <section id="projects" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-8 md:gap-12">
         <h2 className="text-4xl md:text-5xl font-black font-satoshi tracking-tighter text-stone-900 leading-none text-center">
           Featured Projects
