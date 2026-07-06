@@ -74,7 +74,7 @@ const Projects = () => {
         <div className="flex flex-row justify-between lg:justify-center gap-2 font-chillax text-sm text-neutral-500">
           <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile"
           className="flex gap-1.5 items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
-                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]"> View More Projects
+                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97] text-stone-900 hover:text-stone-500"> View More Projects
             <projectsIcons.github className="text-md text-[#F05032] group-hover:text-stone-500 transition-colors duration-300"/>
           </a>
         </div> 
