@@ -14,8 +14,8 @@ export const heroIcons = {
 
 export const heroData = [
     "Welcome to my personal portfolio.",
-    "Im a Software Engineering Graduate.",
+    "I'm a Software Engineering Graduate.",
     "I'm passionate about optimizing complex systems.",
     "Building user-friendly interfaces.",
-    "All fueled by great coffee and clean code." 
+    "All fueled by great coffee and continuous learning." 
   ];
