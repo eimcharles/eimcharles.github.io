@@ -4,6 +4,7 @@ import About from './components/About';
 import Background from './components/Background';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Toolkit from './components/Toolkit';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <About/>
+        <Toolkit/>
         <Background/>
         <Projects/>
         <Footer/>
