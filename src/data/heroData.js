@@ -16,6 +16,6 @@ export const heroData = [
     "Welcome to my personal portfolio.",
     "Im a Software Engineering Graduate.",
     "I'm passionate about optimizing complex systems.",
-    "Designing clean, responsive user interfaces.",
+    "Building user-friendly interfaces.",
     "All fueled by great coffee and clean code." 
   ];
