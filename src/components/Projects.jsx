@@ -4,9 +4,9 @@ import { heroIcons } from '../data/heroData';
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full px-6 py-16 md:py-24 select-none overflow-hidden bg-[#ffffff]">
+    <section id="projects" className="w-full px-6 py-16 md:py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-8 md:gap-12">
-        <h2 className="text-3xl md:text-5xl font-black font-satoshi tracking-tighter text-stone-900 leading-none text-center">
+        <h2 className="text-4xl md:text-5xl font-black font-satoshi tracking-tighter text-stone-900 leading-none text-center">
           Featured Projects
         </h2>
 
@@ -71,30 +71,13 @@ const Projects = () => {
             </div>
           ))}
         </div>
-
-        <div className="flex flex-row justify-center items-center gap-2 font-satoshi text-xs lg:text-sm text-stone-900">
-          <a href="#resume" title="View Resume" 
-          className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff]
-                   hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
-            <projectsIcons.resume className="text-xl sm:text-3xl md:text-xl text-[#209b3e] group-hover:text-stone-500 transition-colors duration-300"/>
-          </a>
-
+        <div className="flex flex-row justify-between lg:justify-center gap-2 font-chillax text-sm text-neutral-500">
           <a href="https://github.com/eimcharles" target="_blank" rel="noreferrer" title="GitHub Profile"
-          className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
-                   hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
-            <projectsIcons.github className="text-xl sm:text-3xl md:text-xl text-[#F05032] group-hover:text-stone-500 transition-colors duration-300"/>
-          </a>
-          
-          <a href="https://www.linkedin.com/in/charles-eimer" target="_blank" rel="noreferrer" title="LinkedIn Profile"
-           className="flex items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
-                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]">
-            <projectsIcons.linkedIn className="text-xl sm:text-3xl md:text-xl text-[#0077B5] group-hover:text-stone-500 transition-colors duration-300"/>
+          className="flex gap-1.5 items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff] 
+                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97]"> View More Projects
+            <projectsIcons.github className="text-md text-[#F05032] group-hover:text-stone-500 transition-colors duration-300"/>
           </a>
         </div> 
-        
-        <p className="flex justify-center items-center gap-1.5 font-satoshi text-sm">
-          Designed and <projectsIcons.code className="text-[#209b3e]"/> with <projectsIcons.heart className="fill-[#d40f78] text-[#e11515]"/>
-        </p>
       </div>
     </section>
   );
