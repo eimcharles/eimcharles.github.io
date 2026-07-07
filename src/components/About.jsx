@@ -20,7 +20,7 @@ const About = () => {
           <p>{aboutData.conclusion}</p>
         </div>
 
-        <div className="flex flex-row justify-between lg:justify-center gap-2 font-chillax text-sm text-neutral-500">
+        <div className="flex flex-row justify-center gap-2 md:gap-6 font-chillax text-sm text-neutral-500">
           <a href="#resume" title="View Resume" 
           className="flex gap-1.5 items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff]
                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97] text-stone-900 hover:text-stone-500"> Resume

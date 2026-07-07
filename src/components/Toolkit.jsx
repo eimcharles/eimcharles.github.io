@@ -9,19 +9,19 @@ const Toolkit = () => {
           My Toolkit
         </h2>   
 
-        <div className="flex flex-col w-full gap-8 md:gap-4">
+        <div className="flex flex-col w-full gap-8">
           {toolkitData.map((item) => {
             return (
               <div key={item.title} className="group flex flex-col md:grid md:grid-cols-8 w-full transition-transform duration-300 hover:translate-x-2">
-                <div className="flex md:col-span-3 py-2 md:py-4">
+                <div className="flex md:col-span-3 py-2">
                   <h3 className="font-chillax text-lg md:text-base font-black tracking-tight text-stone-900 group-hover:text-stone-500 transition-colors duration-300">{item.title}</h3>
                 </div>
 
-                <div className="md:col-span-5 flex flex-row flex-wrap item-start md:items-center gap-x-10 lg:gap-x-8 w-full ">
+                <div className="md:col-span-5 flex flex-row flex-wrap gap-x-8 w-full">
                   {item.languages.map((language) => {
                     const Icon = language.icon;
                     return (
-                      <div key={language.name} className="flex items-center gap-2 py-2.5">
+                      <div key={language.name} className="flex items-center gap-2 py-2">
                         <div className={`text-xl ${language.color}`}>
                           <Icon/>
                         </div>
