@@ -11,28 +11,19 @@ import {
   SiGo
  } from 'react-icons/si';
 
-import { FaJava, FaDatabase, FaLinkedinIn } from 'react-icons/fa6';
-import { FaCode } from "react-icons/fa6";
-import { FiHeart } from "react-icons/fi";
-import { BsFileText } from "react-icons/bs";
+import { FaJava, FaDatabase } from 'react-icons/fa6';
 import { FiGithub } from "react-icons/fi";
 import { LuExternalLink} from "react-icons/lu";
-import { PiArrowBendDownRightThin } from "react-icons/pi";
+
+export const projectsIcons = {
+  github: FiGithub,
+  demoUrl: LuExternalLink,
+};
 
 import Smartess from '../assets/Smartess.webp';
 import Sidekick from '../assets/Sidekick.webp';
 import Cybertruck from '../assets/Cybertruck.gif';
 import Particles from '../assets/Particles.gif';
-
-export const projectsIcons = {
-  linkedIn: FaLinkedinIn,
-  resume: BsFileText,
-  github: FiGithub,
-  code: FaCode,
-  heart: FiHeart,
-  demoUrl: LuExternalLink,
-  arrow: PiArrowBendDownRightThin,
-};
 
 export const projectsData = [
     {
