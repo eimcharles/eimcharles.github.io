@@ -1,43 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --font-satoshi: "Satoshi", sans-serif;
-  --font-chillax: "Chillax", sans-serif;
-  --font-body: "Satoshi", sans-serif;
-  --font-kola: "Kola", sans-serif;
+  --font-chillax: Chillax, sans-serif;  
+  --font-synonym: Synonym, serif;  
 }
 
 @font-face {
-  font-family: 'Chillax';
-  src: url('./assets/fonts/Chillax-Medium.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('./assets/fonts/Satoshi-Regular.woff2') format('woff2');
+  font-family: 'Synonym';
+  src: url('./assets/fonts/Synonym-Regular.woff2') format('woff2');
   font-weight: 400; 
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Kola';
-  src: url('./assets/fonts/Kola-Regular.woff2') format('woff2');
-  font-weight: normal; 
+  font-family: 'Chillax';
+  src: url('./assets/fonts/Chillax-Regular.woff2') format('woff2');
+  font-weight: 400;                    
   font-style: normal;
   font-display: swap;
 }
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: 'Chillax';
+  src: url('./assets/fonts/Chillax-Medium.woff2') format('woff2');
+  font-weight: 500;                 
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }

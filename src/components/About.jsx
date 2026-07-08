@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="flex flex-col w-full max-w-3xl mx-auto gap-8 md:gap-12">
-        <h1 className='text-4xl md:text-5xl font-black font-satoshi tracking-tighter text-stone-900 leading-none text-center'>
+        <h1 className='text-4xl md:text-5xl font-chillax tracking-tighter text-stone-900 leading-none text-center'>
           About Me
         </h1>
 
@@ -15,12 +15,12 @@ const About = () => {
           </div>
         </div>
                 
-        <div className='flex flex-col gap-6 font-satoshi text-sm text-neutral-500 leading-relaxed text-justify italic'>
+        <div className='flex flex-col gap-6 font-synonym tracking-tight text-sm text-neutral-500 leading-relaxed text-justify italic'>
           <p>{aboutData.body}</p>
           <p>{aboutData.conclusion}</p>
         </div>
 
-        <div className="flex flex-row justify-center gap-2 md:gap-6 font-chillax text-sm text-neutral-500">
+        <div className="flex flex-row justify-center gap-2 md:gap-6 font-chillax font-bold tracking-tighter text-sm text-neutral-500">
           <a href="#resume" title="View Resume" 
           className="flex gap-1.5 items-center group border px-5 py-2 rounded-2xl border-stone-300 bg-[#ffffff]
                    hover:bg-stone-50 transition-all duration-300 hover:scale-[0.97] text-stone-900 hover:text-stone-500"> Resume
