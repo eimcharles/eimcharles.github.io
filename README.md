@@ -1,5 +1,5 @@
 #### Personal Portfolio Website
-<img width="1919" height="926" alt="Screenshot 2026-07-02 at 7 03 38 PM" src="https://github.com/user-attachments/assets/022fa58a-a7cd-44fa-9ae1-d97e8d4e5a99" />
+<img width="1917" height="929" alt="Screenshot 2026-07-08 at 2 48 17 PM" src="https://github.com/user-attachments/assets/1519ac51-95c9-4795-8627-1c5e6d6e176e" />
 
 ##### Tech Stack
 ![React](https://img.shields.io/badge/React-19.2-61DAFB?style=flat&logo=react&logoColor=black)
