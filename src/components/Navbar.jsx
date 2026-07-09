@@ -7,9 +7,9 @@ const Navbar = () => {
   const [activeTab, setActiveTab] = useState('#home');
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 px-4 w-full select-none">
-      <div className="flex flex-row justify-center items-center px-2.5 py-2 
-                      sm:px-1.5 sm:py-2 gap-1 sm:gap-3 max-w-fit mx-auto
+    <nav className="fixed top-4 left-0 right-0 z-50 px-2 w-full select-none">
+      <div className="flex flex-row justify-between items-center px-2 py-2 
+                      sm:px-1.5 sm:py-2 gap-1 sm:gap-3 max-w-full md:max-w-fit mx-auto
                       font-chillax backdrop-blur-sm bg-[#ffffff]/30 rounded-2xl">
                         
       {navigationItems.map((item) => {
@@ -19,7 +19,7 @@ const Navbar = () => {
             key={item.linkName} 
             href={item.href} 
             onClick={() => setActiveTab(item.href)}
-            className="relative px-2 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm tracking-wide text-stone-900 
+            className="relative px-2 py-2 sm:px-4 sm:py-2 text-sm tracking-wide text-stone-900 
                        rounded-full transition-colors duration-200">
               {isActive && (
                 <motion.span 

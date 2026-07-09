@@ -19,12 +19,11 @@ const Hero = () => {
     <section id="home" className="relative flex flex-col justify-center items-center px-6 sm:px-12 md:px-24 min-h-screen 
                         bg-linear-to-b from-[#667a70] via-[#ffffff] to-[#ffffff] select-none overflow-hidden">
 
-      <div className="group flex justify-center w-full gap-2 md:max-w-xl md:py-2 py-4 text-4xl md:text-6xl font-chillax tracking-tighter text-stone-900">
-       <h1>Hey, I'm Charles</h1>
-       <heroIcons.binary className="text-xl md:text-2xl text-stone-900 transition-all duration-500 group-hover:rotate-360"/>
+      <div className="group flex justify-center gap-2 w-full md:max-w-xl py-2 text-4xl md:text-6xl font-chillax tracking-tighter text-stone-900">
+        <h1>Hey, I'm Charles.</h1>
       </div>
       
-      <div className="w-full justify-center md:max-w-xl flex md:py-2">
+      <div className="w-full justify-center md:justify-start md:max-w-xl flex md:py-2 md:px-19">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -37,13 +36,13 @@ const Hero = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: i * CHARACTER_DELAY, duration: 0.25, ease: "easeInOut" }}
-                  className="inline-block text-stone-500 font-synonym tracking-tighter text-base whitespace-pre">
+                  className="inline-block text-stone-500 font-synonym tracking-tighter text-base whitespace-break-spaces">
                   {letter}
                 </motion.span>
               ))}
             </motion.div>
           </AnimatePresence>
-        </div>  
+      </div>  
       
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
         <a href="#about" aria-label="Scroll to About" className="flex flex-col items-center gap-1">
