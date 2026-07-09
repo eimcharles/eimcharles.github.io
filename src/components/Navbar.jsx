@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-2 w-full select-none">
       <div className="flex flex-row justify-center items-center px-2 py-2 
-                      sm:px-1.5 sm:py-2 gap-1 sm:gap-3 max-w-full md:max-w-fit mx-auto
+                      sm:px-1.5 sm:py-2 gap-1 sm:gap-3 max-w-fit mx-auto
                       font-chillax backdrop-blur-sm bg-[#ffffff]/30 rounded-2xl">
                         
       {navigationItems.map((item) => {
