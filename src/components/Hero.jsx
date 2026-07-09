@@ -16,7 +16,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative flex flex-col justify-center items-center px-6 sm:px-12 md:px-24 min-h-screen 
+    <section id="home" className="relative flex flex-col justify-center items-center px-6 py-36 min-h-screen 
                         bg-linear-to-b from-[#667a70] via-[#ffffff] to-[#ffffff] select-none overflow-hidden">
 
       <div className="group flex justify-center gap-2 w-full md:max-w-xl py-2 text-4xl md:text-6xl font-chillax tracking-tighter text-stone-900">
