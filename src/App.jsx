@@ -1,10 +1,10 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Toolkit from './components/Toolkit';
 import Background from './components/Background';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import Toolkit from './components/Toolkit';
 
 function App() {
   return (

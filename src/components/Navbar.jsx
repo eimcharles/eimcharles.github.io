@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { navSlideProps } from '../animations/framerAnimations';
 import { navigationItems } from '../data/navbarData';
 
 const Navbar = () => {
@@ -8,25 +9,23 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-2 w-full select-none">
-      <div className="flex flex-row justify-between items-center px-2 py-2 
+      <div className="flex flex-row justify-center items-center px-2 py-2 
                       sm:px-1.5 sm:py-2 gap-1 sm:gap-3 max-w-full md:max-w-fit mx-auto
                       font-chillax backdrop-blur-sm bg-[#ffffff]/30 rounded-2xl">
                         
       {navigationItems.map((item) => {
         const isActive = activeTab === item.href;
         return (
-          <a 
-            key={item.linkName} 
+          <a key={item.linkName} 
             href={item.href} 
             onClick={() => setActiveTab(item.href)}
             className="relative px-2 py-2 sm:px-4 sm:py-2 text-sm tracking-wide text-stone-900 
                        rounded-full transition-colors duration-200">
               {isActive && (
                 <motion.span 
-                  layoutId="activeTab" 
-                  className="absolute inset-0 rounded-xl z-0 black backdrop-blur-xl bg-[#667a70]/20"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                />
+                layoutId="activeTab" 
+                {...navSlideProps} 
+                className="absolute inset-0 rounded-xl z-0 backdrop-blur-xl bg-[#667a70]/20"/>
               )}
               <span className="relative z-10 tracking-tight">{item.linkName}</span>
           </a>
