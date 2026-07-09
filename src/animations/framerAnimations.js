@@ -26,7 +26,7 @@ export const aboutViewport = {
 export const toolkitViewport = { 
   once: true, 
   amount: 0.15, 
-  margin: "0px 0px -200px 0px"
+  margin: "0px 0px -30px 0px"
  };
 
 export const projectsViewport = { 
@@ -38,7 +38,7 @@ export const projectsViewport = {
  export const buttonViewport = { 
   once: true, 
   amount: 0.15, 
-  margin: "0px 0px -100px 0px"
+  margin: "0px 0px -30px 0px"
  };
 
 export const hoverButtonProps = {
