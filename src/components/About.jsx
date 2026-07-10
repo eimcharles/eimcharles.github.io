@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { revealVariants, aboutViewport, buttonViewport, hoverButtonProps } from '../animations/framerAnimations';
+import { cascadeVariants , aboutViewport, buttonViewport, hoverButtonProps } from '../animations/framerAnimations';
 import { aboutData, aboutIcons } from '../data/aboutData';
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
     <section id="about" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="flex flex-col w-full max-w-3xl mx-auto gap-8 md:gap-12">
         <motion.h1 
-        variants={revealVariants}
+        variants={cascadeVariants}
         initial="hidden"
         whileInView="visible"
         viewport={aboutViewport}
@@ -17,7 +17,7 @@ const About = () => {
         </motion.h1>
 
         <motion.div 
-        variants={revealVariants}
+        variants={cascadeVariants}
         initial="hidden"
         whileInView="visible"
         viewport={aboutViewport}
@@ -27,14 +27,14 @@ const About = () => {
           </div>
         </motion.div>
                 
-        <motion.div variants={revealVariants} initial="hidden" whileInView="visible"viewport={aboutViewport}
+        <motion.div variants={cascadeVariants} initial="hidden" whileInView="visible"viewport={aboutViewport}
         className='flex flex-col gap-6 font-synonym tracking-tight text-sm text-neutral-500 leading-relaxed text-justify italic'>
           <p>{aboutData.body}</p>
           <p>{aboutData.conclusion}</p>
         </motion.div>
 
         <motion.div 
-          variants={revealVariants}
+          variants={cascadeVariants}
           initial="hidden"
           whileInView="visible"
           viewport={buttonViewport}

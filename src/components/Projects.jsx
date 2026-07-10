@@ -4,7 +4,7 @@ import { projectsData, projectsIcons } from '../data/projectsData';
 import { heroIcons } from '../data/heroData';
 
 import { 
-  revealVariants, 
+  cascadeVariants, 
   projectsViewport, 
   buttonViewport,
   hoverButtonProps, 
@@ -16,7 +16,7 @@ const Projects = () => {
     <section id="projects" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-8 md:gap-12">
         <motion.h2 
-        variants={revealVariants}
+        variants={cascadeVariants}
         initial="hidden"
         whileInView="visible"
         viewport={projectsViewport} 
@@ -28,7 +28,7 @@ const Projects = () => {
           {projectsData.map((project) => { 
             return (
             <motion.div key={project.id}
-            variants={revealVariants}
+            variants={cascadeVariants}
             initial="hidden"
             whileInView="visible"
             viewport={projectsViewport} 
@@ -104,7 +104,7 @@ const Projects = () => {
         </div>
 
         <motion.div 
-        variants={revealVariants}
+        variants={cascadeVariants}
         initial="hidden"
         whileInView="visible"
         viewport={buttonViewport}

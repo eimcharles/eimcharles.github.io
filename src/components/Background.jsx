@@ -1,19 +1,34 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { backgroundData, backgroundIcons } from '../data/backgroundData';
+import { cascadeVariants,  slideVariants, backgroundViewport } from '../animations/framerAnimations';
 
 const Background = () => {
   return (
     <section id="background" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="flex flex-col w-full max-w-6xl mx-auto gap-8 md:gap-12">
-        <h2 className="text-4xl md:text-5xl font-chillax tracking-tighter text-stone-900 leading-none text-center">
+        <motion.h2 
+        variants={cascadeVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={backgroundViewport} 
+        className="text-4xl md:text-5xl font-chillax tracking-tighter text-stone-900 leading-none text-center">
           My Background
-        </h2>
+        </motion.h2>
 
-        <div className="relative w-full flex flex-col gap-8 md:gap-6 pl-0">          
-          {backgroundData.map((item) => {
+        <div 
+        className="relative w-full flex flex-col gap-8 md:gap-6 pl-0">          
+          {backgroundData.map((item, index) => {
+            const isEven = index % 2 === 0;
             return (
-              <div key={item.id} 
-                className="relative w-full group flex flex-col md:flex-row md:even:flex-row-reverse justify-between items-start gap-4 md:gap-0">
+              <motion.div 
+              key={item.id} 
+              custom={isEven}
+              variants={slideVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={backgroundViewport}
+              className="relative w-full group flex flex-col md:flex-row md:even:flex-row-reverse justify-between items-start gap-4 md:gap-0">
     
                 <div className="hidden md:block absolute left-1/2 top-10 w-1 h-2/3 rounded-4xl bg-stone-400/20 group-hover:bg-stone-900
                                 group-hover:border-none -translate-x-1/2 transition-all duration-300 group-hover:scale-50 z-10" />
@@ -48,7 +63,7 @@ const Background = () => {
                   </div>                  
                 </div>
                 <div className="hidden md:block w-[0%]" />
-              </div>
+              </motion.div>
             );
           })}
         </div>

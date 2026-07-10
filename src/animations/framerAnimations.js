@@ -1,24 +1,42 @@
-import { delay } from "framer-motion";
+export const cascadeVariants = {
+  hidden: { 
+    opacity: 0, 
+    y: 10,       
+    scale: 0.95  
+  },
+  visible: { 
+    opacity: 1, 
+    y: 0,        
+    scale: 1,    
+    transition: { 
+      type: "spring", 
+      stiffness: 90, 
+      damping: 16,
+      delay: 0.25,
+      staggerChildren: 0.05
+    } 
+  },
+};
 
-export const revealVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 10,       
-      scale: 0.95  
-    },
-    visible: { 
-      opacity: 1, 
-      y: 0,        
-      scale: 1,    
-      transition: { 
-        type: "spring", 
-        stiffness: 90, 
-        damping: 16,
-        delay: 0.25,
-        staggerChildren: 0.05
-      } 
-    },
-  };
+export const slideVariants = {
+  hidden: (isEven) => ({
+    opacity: 0,
+    x: isEven ? -50 : 50,  
+    scale: 0.97  
+  }),
+  visible: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: { 
+      type: "spring", 
+      stiffness: 90, 
+      damping: 16,
+      delay: 0.25,
+      staggerChildren: 0.05
+    }
+  }
+};
 
 export const aboutViewport = { 
   once: true, 
@@ -40,9 +58,15 @@ export const projectsViewport = {
 
  export const buttonViewport = { 
   once: true, 
-  amount: 0.15, 
+  amount: 0.25, 
   margin: "0px 0px -30px 0px"
  };
+
+export const backgroundViewport = { 
+    once: true, 
+    amount: 0.30, 
+    margin: "0px 0px -15px 0px"
+};
 
 export const hoverButtonProps = {
   whileHover: { 

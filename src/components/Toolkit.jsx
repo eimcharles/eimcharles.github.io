@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { toolkitData } from '../data/toolkitData';
-import { revealVariants, toolkitViewport, hoverSlideRightProps } from '../animations/framerAnimations';
+import { cascadeVariants, toolkitViewport, hoverSlideRightProps } from '../animations/framerAnimations';
 
 const Toolkit = () => {
   return (
     <section id="toolkit" className="w-full px-6 py-36 select-none bg-[#ffffff]">
       <div className="flex flex-col w-full max-w-3xl mx-auto gap-8 md:gap-12">
         <motion.h2 
-        variants={revealVariants} 
+        variants={cascadeVariants} 
         initial="hidden" 
         whileInView="visible" 
         viewport={toolkitViewport}
@@ -20,7 +20,7 @@ const Toolkit = () => {
           {toolkitData.map((item) => {
             return (
               <motion.div key={item.title} 
-              variants={revealVariants}
+              variants={cascadeVariants}
               initial="hidden"
               whileInView="visible"
               viewport={toolkitViewport}
