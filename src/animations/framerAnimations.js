@@ -1,3 +1,5 @@
+import { delay } from "framer-motion";
+
 export const revealVariants = {
     hidden: { 
       opacity: 0, 
@@ -12,6 +14,7 @@ export const revealVariants = {
         type: "spring", 
         stiffness: 90, 
         damping: 16,
+        delay: 0.25,
         staggerChildren: 0.05
       } 
     },
@@ -79,7 +82,10 @@ export const hoverSlideRightProps = {
 };
 
 export const navSlideProps = {
-  type: "spring",
-  stiffness: 380,
-  damping: 30
+  transition: {
+    type: "spring",
+    stiffness: 650,
+    damping: 48, 
+    mass: 1.5
+  }  
 };
