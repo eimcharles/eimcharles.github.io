@@ -13,7 +13,7 @@ import {
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full px-6 py-16 sm:py-20 md:py-24 lg:py-28 select-none overflow-hidden bg-[#ffffff]">
+    <section id="projects" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-8 md:gap-12">
         <motion.h2 
         variants={revealVariants}
