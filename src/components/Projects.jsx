@@ -64,8 +64,8 @@ const Projects = () => {
                       title={`${project.title} Repository`}
                       {...hoverSlideRightProps}
                       className="flex items-center gap-2 text-stone-900">
-                        <p className="text-xs lg:text-sm font-synonym tracking-tight  text-stone-500">Project</p>
-                          <projectsIcons.github className="text-xs lg:text-lg text-[#F05032] transition-colors duration-500"/>
+                        <projectsIcons.github className="text-xs lg:text-lg text-[#F05032] transition-colors duration-500"/>
+                        <p className="text-xs lg:text-sm font-synonym tracking-tight  text-stone-500">Github</p>
                       </motion.a>
                     </div> 
                   </div>  
