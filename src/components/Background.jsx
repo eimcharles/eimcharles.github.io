@@ -17,7 +17,7 @@ const Background = () => {
         </motion.h2>
 
         <div 
-        className="relative w-full flex flex-col gap-8 md:gap-6 pl-0">          
+        className="relative w-full flex flex-col gap-4 pl-0">          
           {backgroundData.map((item, index) => {
             const isEven = index % 2 === 0;
             return (
