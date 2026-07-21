@@ -6,7 +6,7 @@ import { navSlideProps } from '../animations/framerAnimations';
 import { navigationItems } from '../data/navbarData';
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState('#home');
+  const [activeTab, setActiveTab] = useState('/#home');
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-2 w-full select-none">
       <div className="flex flex-row justify-center items-center px-2 py-2 
