@@ -97,7 +97,7 @@ export const projectsData = [
   {
     id: 'cybertruck',
     type: 'Academic Project',
-    title: 'Cybertruck',
+    title: '3D Cybertruck',
     overview: 'Interactive 3D Cybertruck scene featuring burnout animations with synchronized smoke generation.',
     motivation: '',
 
@@ -129,7 +129,7 @@ export const projectsData = [
   {
     id: 'particles',
     type: 'Academic Project',
-    title: 'Particles',
+    title: '3D Particles',
     overview: 'Interactive rotating 3D particles featuring animations and a dynamic first person camera.',
     motivation: '',
     
