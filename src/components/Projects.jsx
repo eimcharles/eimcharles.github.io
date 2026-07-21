@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { projectsData, projectsIcons } from '../data/projectsData';
 import { heroIcons } from '../data/heroData';
@@ -32,7 +33,7 @@ const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={projectsViewport} 
-            className={`group ${project.gridSpan} w-full flex flex-col`}>
+            className="group md:col-span-4 w-full flex flex-col">
               
               <motion.div 
               {...hoverProjectCardProps}
@@ -48,19 +49,15 @@ const Projects = () => {
                       {project.demoUrl && (
                         <motion.a 
                         href={project.demoUrl} 
-                        target="_blank" 
-                        rel="noreferrer" 
                         {...hoverSlideRightProps}
                         title={`${project.title}`}
-                        className="flex items-center gap-1 text-stone-900" >
-                            <projectsIcons.demoUrl className="text-xs lg:text-lg text-[#1e63ca] " />
+                        className="flex items-center gap-1 text-stone-900">
+                            <projectsIcons.demo className="text-xs lg:text-lg text-[#1e63ca]"/>
                           <p className="text-xs lg:text-sm font-synonym tracking-tight text-stone-500">{project.demo}</p>
                         </motion.a>
                       )}
                       <motion.a href=
                       {project.githubUrl} 
-                      target="_blank" 
-                      rel="noreferrer" 
                       title={`${project.title} Repository`}
                       {...hoverSlideRightProps}
                       className="flex items-center gap-2 text-stone-900">
@@ -75,9 +72,9 @@ const Projects = () => {
                       {project.type}
                     </p>
                     <div className="flex flex-row gap-4">
-                    {project.languages && (
+                    {project.stack && (
                       <div className="flex flex-row justify-end gap-4 w-full">
-                        {project.languages.map((item) => {
+                        {project.stack.map((item) => {
                           const Icon = item.icon;
                           return (
                             <div key={item.id} className="flex justify-between" title={item.name}>
@@ -90,13 +87,27 @@ const Projects = () => {
                     </div> 
                   </div>      
                   <p className="font-synonym tracking-tighter text-xs lg:text-sm text-justify leading-relaxed text-stone-500">
-                    {project.description}
+                    {project.overview}
                   </p>          
                 </div>
 
-                <div className="w-full aspect-video mt-auto overflow-hidden">
-                  <img src={project.image} alt={`${project.title} Preview`} className="w-full h-full object-cover" loading="lazy"/>  
+                <div className="relative w-full aspect-video mt-auto overflow-hidden">
+                  <img src={project.image} 
+                  alt={`${project.title} Preview`} 
+                  className="w-full h-full object-cover"/>  
+                  {project.h5 && (
+
+                  <div 
+                  className="absolute inset-0 flex items-center justify-center bg-black/50">
+                    <Link to={`/projects/${project.id}`}
+                    className="text-white font-chillax font-bold tracking-tighter text-sm px-6 py-3 border rounded-xl 
+                    hover:bg-white hover:text-black hover:border-none transition-colors duration-300"> 
+                      Project Details
+                    </Link> 
+                  </div>
+                  )} 
                 </div>
+
               </motion.div>
             </motion.div>
           );
@@ -110,8 +121,6 @@ const Projects = () => {
         viewport={buttonViewport}
         className="flex justify-center font-chillax font-bold tracking-tighter text-sm text-neutral-500">
           <motion.a href="https://github.com/eimcharles" 
-          target="_blank" 
-          rel="noreferrer" 
           title="GitHub Profile"
           {...hoverButtonProps}
           className="flex gap-1.5 items-center group border px-6 py-3 rounded-xl border-stone-300">

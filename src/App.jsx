@@ -1,23 +1,17 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Toolkit from './components/Toolkit';
-import Background from './components/Background';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
+import { Outlet} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-      <div>
-        <Navbar/>
-        <Hero/>
-        <About/>
-        <Toolkit/>
-        <Background/>
-        <Projects/>
-        <Footer/>
-      </div>
-  )
+    <div>
+      <Navbar/>
+      <main>
+        <Outlet/>
+      </main>
+      <Footer/>
+    </div>
+  );
 }
 
 export default App
