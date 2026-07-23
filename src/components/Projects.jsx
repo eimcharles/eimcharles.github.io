@@ -13,7 +13,7 @@ import {
   hoverProjectCardProps } from '../animations/framerAnimations';
 
 const Projects = () => {
-  return (
+    return (
     <section id="projects" className="w-full px-6 py-36 select-none overflow-hidden bg-[#ffffff]">
       <div className="w-full max-w-6xl mx-auto flex flex-col gap-8 md:gap-12">
         <motion.h2 
@@ -95,13 +95,13 @@ const Projects = () => {
                   <img src={project.image} 
                   alt={`${project.title} Preview`} 
                   className="w-full h-full object-cover"/>  
-                  {project.h5 && (
-
+                  {project.motivation && (
                   <div 
                   className="absolute inset-0 flex items-center justify-center bg-black/50">
                     <Link to={`/projects/${project.id}`}
-                    className="text-white font-chillax font-bold tracking-tighter text-sm px-6 py-3 border rounded-xl 
-                    hover:bg-white hover:text-black hover:border-none transition-colors duration-300"> 
+                    className="text-white/80 font-chillax font-bold tracking-tighter 
+                    text-xs md:text-sm px-6 py-3 border-2 border-white/80 rounded-xl group-hover:bg-white/90 
+                    group-hover:text-stone-900 transition-colors duration-300"> 
                       Project Details
                     </Link> 
                   </div>

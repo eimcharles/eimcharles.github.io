@@ -85,7 +85,8 @@ export const projectsData = [
     
     image: Smartess,
     images: [ 
-      { id: 25, src: SmartessDashboard }
+      { id: 25, src: SmartessProject },
+      { id: 26, src: SmartessDashboard }
     ],
         
     demo: 'Demo',
@@ -99,15 +100,13 @@ export const projectsData = [
     type: 'Academic Project',
     title: '3D Cybertruck',
     overview: 'Interactive 3D Cybertruck scene featuring burnout animations with synchronized smoke generation.',
-    motivation: '',
+    motivation: 'This project is a graphics application built for the Computer Graphics (COMP 371) course at Concordia University.',
 
     keyFeatures: [
-      { id: 27, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 28, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 29, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 30, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 31, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 32, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 27, text: 'Mouse and keyboard controlled camera simulating spatial depth and perspective.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 28, text: 'Textured surfaces for skybox and ground.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 29, text: '3D Cybertruck model loading using Assimp.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 30, text: 'Dynamic particle system to simulate burnout animations with synchronized smoke generation.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
     ],
      
     stack: [
@@ -122,6 +121,7 @@ export const projectsData = [
     
     demo: '',
     demoUrl: '',
+    aspect: 'aspect-video',
     githubUrl: 'https://github.com/eimcharles/interactive-3d-graphics-scene',
   },
 
@@ -130,16 +130,13 @@ export const projectsData = [
     id: 'particles',
     type: 'Academic Project',
     title: '3D Particles',
-    overview: 'Interactive rotating 3D particles featuring animations and a dynamic first person camera.',
-    motivation: '',
+    overview: 'Interactive 3D particles scene featuring dynamic lighting and a mouse and keyboard first person camera.',
+    motivation: 'This project is a graphics application built for the Computer Graphics (COMP 371) course at Concordia University.',
     
     keyFeatures: [
-      { id: 36, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 37, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 38, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 39, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 40, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
-      { id: 41, text: '', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 36, text: 'Mouse and keyboard controlled camera simulating spatial depth and perspective.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 37, text: 'Textured surfaces for skybox, ground and rotating particle cubes.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
+      { id: 38, text: 'Dynamic lighting with multiple light sources.', icon: PiArrowBendDownRightThin, color: 'text-stone-500' },
     ],
      
     stack: [
@@ -154,6 +151,7 @@ export const projectsData = [
       
     demo: '',
     demoUrl: '',
+    aspect: 'aspect-video',
     githubUrl: 'https://github.com/eimcharles/interactive-3d-graphics-scene',
   },
 ];
