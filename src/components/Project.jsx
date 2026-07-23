@@ -48,7 +48,7 @@ const Project = () => {
         {currentProject.type}
         </motion.h2>
 
-        <div className='flex flex-row gap-2 justify-center md:justify-between'>
+        <div className='flex flex-row gap-2 justify-between'>
           <motion.div 
             variants={cascadeVariants}
             initial="hidden"
