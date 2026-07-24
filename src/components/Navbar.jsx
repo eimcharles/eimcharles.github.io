@@ -1,12 +1,24 @@
 import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { navSlideProps } from '../animations/framerAnimations';
 import { navigationItems } from '../data/navbarData';
 
 const Navbar = () => {
+  const location = useLocation();
   const [activeTab, setActiveTab] = useState('/#home');
+
+  useEffect(() => {
+    if (location.pathname.startsWith('/projects')) {
+      setActiveTab('/#projects');
+    } else if (location.hash) {
+      setActiveTab(`/${location.hash}`);
+    } else if (location.pathname === '/') {
+      setActiveTab('/#home');
+    }
+  }, [location]);
+
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-2 w-full select-none">
       <div className="flex flex-row justify-center items-center px-2 py-2 
