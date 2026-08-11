@@ -17,9 +17,9 @@ export const backgroundData = [
     role: "B.Eng Software Engineering",
     organization: "Concordia University",
     duration: "2021 - 2025",
-    summary: "Bachelors of Software Engineering",
+    summary: "Bachelor of Software Engineering",
     contributions: [
-      {id: "concordia-c1" , text: "Member of C-Edge for Co-Operative Education."},
+      {id: "concordia-c1", text: "Relevant Courses: Artificial Intelligence, Data Communication & Computer Networks, Data Structures & Algorithms."},
     ]
   },
   {
@@ -27,11 +27,10 @@ export const backgroundData = [
     role: "Software Developer I",
     organization: "Intact Insurance",
     duration: "Sept 2023 - Aug 2024",
-    summary: "Permanent Part-time - Contact Billing Team",
+    summary: "Permanent Part-Time - Contact Billing Team",
     contributions: [
-      {id: "intact-c1" , text: "Achieved 100% visibility of inter-agency fund transfers by developing automated reconciliation tools in Guidewire BillingCenter."},
-      {id: "intact-c2" , text: "Facilitated QA processes by supporting acceptance testing and executing manual testing to ensure business alignment."},
-      {id: "intact-c3" , text: "Optimized deployment efficiency by contributing to the migration of services to ArgoCD."}
+      {id: "intact-c1", text: "Automated a previously manual, weekly fund transfer reconciliation process for broker partners across Western, Atlantic, and Ontario regions by building tooling in Guidewire BillingCenter, achieving 100% transaction visibility."},
+      {id: "intact-c2", text: "Migrated billing services (document generation, scheduling) to ArgoCD-managed GitOps pipelines, standardizing deployment configuration across services."}
     ]
   },
   {
@@ -39,22 +38,20 @@ export const backgroundData = [
     role: "Software Developer Intern",
     organization: "Intact Insurance",
     duration: "May 2023 - Sept 2023",
-    summary: "Second internship - Contact Billing Team",
+    summary: "Second Internship - Contact Billing Team",
     contributions: [
-      {id: "intact-c4" , text: "Modernized services to adopt a contract-first approach with OpenAPI, enabling automated source generation."},
-      {id: "intact-c5" , text: "Strengthened API reliability through robust payload validation, reducing data-related errors."},
-      {id: "intact-c6" , text: "Achieved 100% test coverage by extending existing JUnit test suites for payload validation."}
+      {id: "intact-c3", text: "Refactored billing services (policy handling, automated controls) to a contract-first OpenAPI approach, replacing manually maintained client contracts with automated source generation."},
+      {id: "intact-c4", text: "Validated the contract-first refactor and service migrations through unit test rework, manual schema testing, and JMeter load testing under varying payload scenarios."}
     ]
   },
   {
     id: "exp-4",
     role: "Software Developer Intern",
     organization: "Intact Insurance",
-    duration: "Jan 2023 - May 2023", 
-    summary: "First internship - Contact Billing Team",
+    duration: "Jan 2023 - May 2023",
+    summary: "First Internship - Contact Billing Team",
     contributions: [
-      {id: "intact-c7" , text: "Optimized service configurations by refactoring dependency management, managing plugin lifecycles, and standardizing Swagger documentation."},
-      {id: "intact-c8" , text: "Fostered collaboration and continuous improvement by active participation in Scrum ceremonies."},
+      {id: "intact-c5", text: "Standardized service configurations and API documentation practices — including YAML source generation, Swagger cleanup, and dependency and plugin lifecycle management — across 3+ billing services."},
     ]
   }
 ];
